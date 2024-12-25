@@ -102,6 +102,7 @@ export default function Timeline({ events }) {
                   ${layout.event === 'left' ? 'md:pr-8' : 'md:pl-8'}
                   ${layout.event === 'right' ? 'md:col-start-2' : ''}
                   transition-all duration-700 transform
+                  flex items-center justify-center
                   ${visibleEvents.has(event.id.toString()) 
                     ? 'opacity-100 translate-x-0' 
                     : 'opacity-0 translate-x-20'}
@@ -113,7 +114,8 @@ export default function Timeline({ events }) {
                 <div className={`
                   ${!isBottomDesc ? (layout.desc === 'left' ? 'md:pr-8' : 'md:pl-8') : 'mt-4 md:mt-8'}
                   ${layout.desc === 'left' ? 'md:col-start-1 md:row-start-1' : ''}
-                  transition-all duration-700 transform delay-200
+                  transition-all duration-700 transform delay-200 
+                  flex items-center justify-center
                   ${visibleEvents.has(event.id.toString()) 
                     ? 'opacity-100 translate-y-0' 
                     : 'opacity-0 translate-y-20'}

@@ -12,7 +12,7 @@ export default function TimelineEvent({ event }) {
   return (
     <div 
       className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg p-4 md:p-8 
-      relative z-40 card-border-light dark:card-border-dark card-hover-effect glow-effect cursor-glow"
+      relative z-40 card-border-light dark:card-border-dark card-hover-effect glow-effect cursor-glow flex-1"
       onMouseMove={handleMouseMove}
     >
       <div className="flex flex-col gap-4">
