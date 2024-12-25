@@ -9,18 +9,19 @@ export default function TimelineDescription({ event }) {
 
   return (
     <div 
-      className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 glow-effect cursor-glow relative z-40 card-border-light dark:card-border-dark"
+      className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg p-4 md:p-8
+      relative z-40 card-border-light dark:card-border-dark glow-effect cursor-glow"
       onMouseMove={handleMouseMove}
     >
-      <div className="space-y-6">
-        <div className="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900 rounded-full">
-          <span className="text-blue-800 dark:text-blue-100 font-semibold">{event.year}</span>
+      <div className="space-y-4 md:space-y-6">
+        <div className="inline-block px-3 py-1 md:px-4 md:py-2 bg-blue-100 dark:bg-blue-900 rounded-full">
+          <span className="text-sm md:text-base text-blue-800 dark:text-blue-100 font-semibold">{event.year}</span>
         </div>
         
-        <h3 className="text-3xl font-bold tracking-tight dark:text-white">{event.title}</h3>
+        <h3 className="text-xl md:text-3xl font-bold tracking-tight dark:text-white">{event.title}</h3>
         
         <div className="space-y-4">
-          <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+          <p className="text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300">
             {event.description}
           </p>
           

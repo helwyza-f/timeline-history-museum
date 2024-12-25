@@ -11,8 +11,8 @@ export default function TimelineEvent({ event }) {
 
   return (
     <div 
-      className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg p-8 
-      relative z-40 card-border-light dark:card-border-dark card-hover-effect glow-effect cursor-glow flex-1"
+      className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg p-4 md:p-8 
+      relative z-40 card-border-light dark:card-border-dark card-hover-effect glow-effect cursor-glow"
       onMouseMove={handleMouseMove}
     >
       <div className="flex flex-col gap-4">
@@ -25,9 +25,9 @@ export default function TimelineEvent({ event }) {
           />
         </div>
         <div>
-          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{event.year}</div>
-          <h3 className="text-xl font-semibold mt-2 dark:text-white">{event.title}</h3>
-          <p className="text-gray-600 dark:text-gray-300 mt-2">{event.shortDescription}</p>
+          <div className="text-xl md:text-2xl font-bold text-blue-600 dark:text-blue-400">{event.year}</div>
+          <h3 className="text-lg md:text-xl font-semibold mt-2 dark:text-white">{event.title}</h3>
+          <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 mt-2">{event.shortDescription}</p>
         </div>
       </div>
     </div>
