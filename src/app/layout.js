@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <ThemeToggle />
         <div className="flex min-h-screen flex-col">
           <header className="sticky top-0 z-40 w-full border-b border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-gray-900/95  backdrop-blur supports-[backdrop-filter]:bg-white/60">
-            <div className="container flex h-14 md:h-20 items-center pl-10">
+            <div className="container flex h-14 md:h-20 items-center md:pl-10 pl-2">
               <div className="mr-4 hidden md:flex">
                 <a className="mr-6 flex items-center text-2xl space-x-2 font-bold" href="/">
                   Museum Timeline
