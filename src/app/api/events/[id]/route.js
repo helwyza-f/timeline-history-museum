@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma"; // Sesuaikan dengan path Prisma instance
 
 export async function GET(req, { params }) {
-  const { id } = params;
+  const { id } = await params;
 
   try {
     const event = await prisma.event.findUnique({
@@ -23,7 +23,7 @@ export async function GET(req, { params }) {
 }
 
 export async function PUT(req, { params }) {
-  const { id } = params;
+  const { id } = await params;
   const formData = await req.formData();
 
   const highlights =
