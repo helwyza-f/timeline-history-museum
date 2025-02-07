@@ -15,7 +15,7 @@ export default function Login() {
     e.preventDefault();
 
     // Hardcoded credentials
-    const validEmail = "admin@example.com";
+    const validEmail = "admin@museum.com";
     const validPassword = "password123";
 
     if (email === validEmail && password === validPassword) {
